@@ -1,0 +1,10 @@
+config.env
+identities.json
+mailboxes.txt
+*.db
+unavailable.tsv
+config.env.*
+*.bak
+.claude/settings.local.json
+__pycache__/
+*.pyc

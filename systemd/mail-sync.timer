@@ -1,0 +1,9 @@
+[Unit]
+Description=Досинхронизация почты (интервал меняется строкой OnUnitActiveSec)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=10min
+
+[Install]
+WantedBy=timers.target

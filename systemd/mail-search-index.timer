@@ -1,0 +1,9 @@
+[Unit]
+Description=Индекс поиска по почте раз в час
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target

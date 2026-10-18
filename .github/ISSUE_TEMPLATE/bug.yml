@@ -1,0 +1,24 @@
+name: Ошибка или не получилось
+description: Что-то сломалось при переносе, настройке или в скриптах
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Не вставляйте пароли, адреса клиентов и содержимое писем."
+  - type: input
+    id: system
+    attributes:
+      label: Система и провайдер
+      placeholder: Ubuntu 24.04, VPS у ..., Python 3.12
+  - type: dropdown
+    id: step
+    attributes:
+      label: На каком этапе
+      options: [Выбор варианта, Установка сервера, DNS и доставка писем, Перенос писем (migrate.py), Досинхронизация (sync.py), Поиск, Подсказки адресов, Защитный хук, Другое]
+  - type: textarea
+    id: what
+    attributes:
+      label: Что делали, что ожидали, что получили
+      description: Если есть сообщение об ошибке, вставьте его (без паролей).
+    validations:
+      required: true

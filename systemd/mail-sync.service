@@ -1,0 +1,8 @@
+[Unit]
+Description=Досинхронизация новых писем со старого сервера
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mailmove
+ExecStart=/usr/bin/python3 /opt/mailmove/scripts/sync.py

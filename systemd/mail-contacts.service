@@ -1,0 +1,8 @@
+[Unit]
+Description=Подсказки адресов в Roundcube из переписки
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mailmove
+ExecStart=/usr/bin/python3 /opt/mailmove/scripts/contacts.py

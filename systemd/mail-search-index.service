@@ -1,0 +1,8 @@
+[Unit]
+Description=Обновление индекса поиска по почте
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/mailmove
+ExecStart=/usr/bin/python3 /opt/mailmove/scripts/search.py

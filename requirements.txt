@@ -1,0 +1,3 @@
+# Только стандартная библиотека Python 3.9+. Дополнительно:
+# - sqlite3 с поддержкой FTS5 (для search.py), проверка: python3 -c "import sqlite3; sqlite3.connect(':memory:').execute('create virtual table t using fts5(a)')"
+# - клиент mysql (для contacts.py, Roundcube на MySQL/MariaDB)
